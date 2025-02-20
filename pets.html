@@ -21,7 +21,18 @@
     </style>
 </head>
 <body>
-
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="pets.html">Pet Options</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="basic.html">Basic</a></li>
+            <li class="nav-item"><a class="nav-link" href="advanced.html">Advanced</a></li>
+        </ul>
+    </div>
+  </nav>
     <h1>Pick a Pet by Prudhvi Chigurupati</h1>
 
     <div class="container">
@@ -110,5 +121,59 @@
   </tbody>
 </table>
 
+<!-- Button Toolbar -->
+<div class="btn-toolbar d-flex justify-content-center">
+      
+  <!-- First Button Group (Success) -->
+  <div class="btn-group me-2">
+    <button class="btn btn-success">H (Husky)</button>
+    <button class="btn btn-success">G (Golden Retriever)</button>
+    <button class="btn btn-success">R (Rabbit)</button>
+  </div>
+
+  <!-- Second Button Group (Warning) -->
+  <div class="btn-group me-2">
+    <button class="btn btn-warning">I (Irish Bull Terrier)</button>
+    <button class="btn btn-warning">C(Chihuahua)</button>
+  </div>
+
+  <!-- Third Button Group (Danger) -->
+  <div class="btn-group">
+    <button class="btn btn-danger">U (Uakari monkey)</button>
+  </div>
+
+</div>
+</div>
+<br>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="dropdown mt-4">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      More Options
+  </button>
+  <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+  </ul>
+</div>
+
+
+<br>
+<form class="mt-4">
+  <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+      <small class="form-text text-muted">We won't share your email.</small>
+  </div>
+  <div class="form-group mt-2">
+      <label for="pet">Pet</label>
+      <input type="text" class="form-control" id="pet" placeholder="Enter your pet">
+  </div>
+  <div class="form-check mt-2">
+      <input type="checkbox" class="form-check-input" id="newsletter">
+      <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
 </body>
 </html>
